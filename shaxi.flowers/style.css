@@ -1,0 +1,356 @@
+/* ===== Общие настройки ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff0f5; /* жумшак гүл фону */
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+  text-align: center;
+  padding: 25px;
+}
+
+nav {
+  background: #ffe4ec;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #c2185b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Секции ===== */
+section {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #c2185b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Сетка карточек ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== Кнопки ===== */
+button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
+/* ===== Список выбранных цветов ===== */
+ul#flowerCart {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  background: #ffe4ec;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+ul#flowerCart li {
+  padding: 6px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ffc0cb;
+}
+
+ul#flowerCart li:last-child {
+  border-bottom: none;
+}
+
+/* ===== Общая сумма ===== */
+#flowerTotal {
+  font-weight: bold;
+  color: #c2185b;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #ffc0cb;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== Мобильная адаптация ===== */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Общие настройки ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+  text-align: center;
+  padding: 25px;
+}
+
+nav {
+  background: #ffe4ec;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #c2185b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h2 {
+  color: #c2185b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Список контактов ===== */
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 30px auto;
+  max-width: 400px;
+}
+
+.contacts-list li {
+  background: white;
+  border-radius: 15px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contacts-list a {
+  text-decoration: none;
+  color: #c2185b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contacts-list a:hover {
+  color: #ff1493;
+  text-decoration: underline;
+}
+
+/* ===== Форма ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #ffc0cb;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== Мобильная адаптация ===== */
+@media (max-width: 600px) {
+  .contacts-list li {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f8;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #c2185b;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.3em;
+  color: #800040;
+  margin-top: 10px;
+}
+
+nav {
+  background: #ffe4ec;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #c2185b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff1493;
+}
+
+/* ===== Основной блок с изображением и текстом ===== */
+.main-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.main-info img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.text-info {
+  max-width: 450px;
+}
+
+.text-info h2 {
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.text-info p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #ffc0cb;
+  text-align: center;
+  padding: 20px 0;
+  color: #800040;
+  font-weight: bold;
+}
+
+/* ===== Мобильная адаптация ===== */
+@media (max-width: 800px) {
+  .main-info {
+    flex-direction: column;
+  }
+
+  .main-info img {
+    width: 90%;
+    height: auto;
+  }
+
+  .text-info {
+    max-width: 90%;
+    text-align: center;
+  }
+}
