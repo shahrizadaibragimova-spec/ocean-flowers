@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>OCEAN.FLOWERS – Букеты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1> OCEAN.FLOWERS – Букеты</h1>
+  <p>Выберите подарок </p>
+</header>
+
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="rose.html">Цветы</a>
+  <a href="buket.html">Подарки</a>
+  <a href="contact.html">Контакты</a>
+</nav>
+
+<section>
+  <h2>Выберите подарки</h2>
+
+  <div class="grid">
+
+    
+
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/d5/6c/c1/d56cc10209c2b4e1d91e323551ffb10e.jpg" alt="Лилия фиолетовая">
+      <h3>Подарочный бокс</h3>
+      <p>Цена: 1000 сом</p>
+      <button onclick="addFlower('Подарочный бокс', 1000)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/58/7e/e4/587ee4ff5ffa851ed671a0d4ba96b749.jpg" alt="Роза белая">
+      <h3>Пандора </h3>
+      <p>Цена: 1500 сом</p>
+      <button onclick="addFlower('Пандора', 1500)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/3a/88/64/3a88640b5360d1db53947856af556b66.jpg" alt="Тюльпан желтый">
+      <h3>Сепочка</h3>
+      <p>Цена: 1000 сом</p>
+      <button onclick="addFlower('Сепочка', 1000)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/15/97/d6/1597d61730667ac010b5725a777bcfc5.jpg" alt="Лилия фиолетовая">
+      <h3>Роза и киндера</h3>
+      <p>Цена: 2000 сом</p>
+      <button onclick="addFlower('Роза и киндера', 2000)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/37/8d/5d/378d5d00b8c6f87a480c26352b422a1c.jpg" alt="Роза белая">
+      <h3>Комплект бронзза</h3>
+      <p>Цена: 1500 сом</p>
+      <button onclick="addFlower('Комплект бронзза ', 1500)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/a2/3a/ce/a23ace8c3e5ebfa5223e9e7cf430c6a5.jpg" alt="Тюльпан желтый">
+      <h3>Бокс</h3>
+      <p>Цена: 1800 сом</p>
+      <button onclick="addFlower('Бокс', 1800)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/5f/fc/6f/5ffc6fb2145597d9630f95897c0e3fef.jpg" alt="Лилия фиолетовая">
+      <h3>Pink бокс</h3>
+      <p>Цена: 2000сом</p>
+      <button onclick="addFlower('Pink бокс', 2000)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/a8/3b/50/a83b50b3046b8e4708e3bc1099946703.jpg" alt="Роза белая">
+      <h3> Белый бокс</h3>
+      <p>Цена: 2000сом</p>
+      <button onclick="addFlower('Белый бокс', 2000)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/d0/54/47/d054474bac383c43affcdf7088b6970e.jpg" alt="Тюльпан желтый">
+      <h3>Кулибника в шоколаде</h3>
+      <p>Цена: 1800 сом</p>
+      <button onclick="addFlower('Кулибника в шоколаде', 1800)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/03/b7/f2/03b7f21428cf105908c48d0f8ac83629.jpg" alt="Лилия фиолетовая">
+      <h3>Букет в мишки</h3>
+      <p>Цена: 1800 сом</p>
+      <button onclick="addFlower('Букет в мишки', 1800)">Добавить</button>
+    </div>
+
+    
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/33/ff/5b/33ff5bdc2530f9a0b266942091c21700.jpg" alt="Тюльпан желтый">
+      <h3>Набор Диор </h3>
+      <p>Цена: 3000 сом</p>
+      <button onclick="addFlower('Набор Диор', 3000)">Добавить</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ec/73/9c/ec739ccc0d1e25f870d911d3c3206597.jpg" alt="Лилия фиолетовая">
+      <h3>Свунер Тюльпан</h3>
+      <p>Цена: 1800 сом</p>
+      <button onclick="addFlower('Свунер Тюльпан', 180)">Добавить</button>
+    </div>
+    
+
+  </div>
+
+  <h3>🛒 Текущий выбор цветов для букета:</h3>
+  <ul id="flowerCart"></ul>
+  <p><strong>Общая сумма:</strong> <span id="flowerTotal">0</span> сом</p>
+  <p id="message" style="margin-top:15px; font-weight:600;"></p>
+
+</section>
+
+
+<div style="margin-top:20px; text-align:center;">
+  <button onclick="clearBuket()" class="btn danger">
+    🗑 Очистить
+  </button>
+
+  <button onclick="saveBuket()" class="btn success">
+    💾 Сохранить
+  </button>
+</div>
+
+<footer>
+  <p>© 2026 shaxi.flowers</p>
+</footer>
+
+<script src="script.js">
+    let flowerCart = [];
+let flowerTotal = 0;
+
+function addFlower(name, price) {
+  // Тандаган гүлдү массивге кошуу
+  flowerCart.push({name: name, price: Number(price)});
+
+  // Жалпы сумманы эсептөө
+  flowerTotal = flowerCart.reduce((sum, flower) => sum + flower.price, 0);
+
+  // Тизмени жаңылоо
+  updateFlowerList();
+}
+
+function updateFlowerList() {
+  const cartList = document.getElementById('flowerCart');
+  cartList.innerHTML = ''; // эски тизмени тазалоо
+
+  flowerCart.forEach(flower => {
+    const li = document.createElement('li');
+    li.textContent = `${flower.name} – ${flower.price} сом`;
+    cartList.appendChild(li);
+  });
+
+  document.getElementById('flowerTotal').textContent = flowerTotal;
+}
+
+</script>
+</body>
+</html>
